@@ -1,0 +1,35 @@
+org.springframework.context.ApplicationContextInitializer=\
+  com.thirdlev.ContextInitializer.ApplicationContextInitializerImpl,\
+  com.thirdlev.ContextInitializer.ApplicationContextInitializerImpl2
+
+
+# Application Listeners
+org.springframework.context.ApplicationListener=\
+com.thirdlev.listener.EmailListener
+
+
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+  com.thirdlev.autoconfiguration.helloAutoConfig,\
+  com.thirdlev.autoconfiguration.SpringContextHolder
+
+# Auto Configuration Import Listeners
+org.springframework.boot.autoconfigure.AutoConfigurationImportListener=\
+com.thirdlev.AutoConfigurationImport.SysoutAutoConfigurationImportListener
+
+
+
+
+# Auto Configuration Import Filters
+org.springframework.boot.autoconfigure.AutoConfigurationImportFilter=\
+com.thirdlev.importfilter.MyExclusionFilter
+
+
+
+# Failure analyzers
+org.springframework.boot.diagnostics.FailureAnalyzer=\
+com.thirdlev.FailureAnalyzer.MyBeanNotOfRequiredTypeFailureAnalyzer,
+com.thirdlev.FailureAnalyzer.MyRuntimeExceptionFailureAnalyzer
+
+
+
+
