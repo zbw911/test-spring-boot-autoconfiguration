@@ -10,7 +10,14 @@ com.thirdlev.listener.EmailListener
 
 org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
   com.thirdlev.autoconfiguration.helloAutoConfig,\
-  com.thirdlev.autoconfiguration.SpringContextHolder
+  com.thirdlev.autoconfiguration.SpringContextHolder,\
+  com.thirdlev.autoconfigurationConditions.testConditionalOnMissingClass,\
+  com.thirdlev.autoconfigurationConditions.TestConditionalOnBean,\
+  com.thirdlev.autoconfigurationConditions.TestConditionalOnBeanName,\
+  com.thirdlev.autoconfigurationConditions.TestConditionalOnProperty,\
+  com.thirdlev.autoconfigurationConditions.TestConditionalOnBeanProtypes,\
+  com.thirdlev.autoconfigurationConditions.MyConfig
+
 
 # Auto Configuration Import Listeners
 org.springframework.boot.autoconfigure.AutoConfigurationImportListener=\

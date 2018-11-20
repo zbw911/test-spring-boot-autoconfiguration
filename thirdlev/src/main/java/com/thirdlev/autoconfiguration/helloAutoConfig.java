@@ -1,6 +1,8 @@
 package com.thirdlev.autoconfiguration;
 
+import com.thirdlev.autoconfigurationConditions.MyConfig;
 import com.thirdlev.config;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
@@ -11,6 +13,9 @@ import org.springframework.context.annotation.Configuration;
 
 @Configuration
 public class helloAutoConfig {
+
+    @Autowired
+    MyConfig myConfig;
 
     public helloAutoConfig() {
         System.out.println("hello Configed");

@@ -1,2 +1,15 @@
 server:
   port: 1024
+
+
+
+
+a:
+  b:
+    testproperty: haha
+
+
+my:
+  config:
+    a: 1
+    b: c
